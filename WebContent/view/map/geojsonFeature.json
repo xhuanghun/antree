@@ -1,0 +1,41 @@
+[{
+    "type": "Feature",
+    "properties": {
+        "name": "one Field",
+        "show_on_map": true
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [109.59, 19.29]
+    }
+}, {
+    "type": "Feature",
+    "properties": {
+        "name": "two Field",
+        "show_on_map": false
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [109.49, 19.79]
+    }
+},{
+    "type": "Feature",
+    "properties": {
+        "name": "three Field",
+        "show_on_map": false
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [109.09, 19.29]
+    }
+},{
+    "type": "Feature",
+    "properties": {
+        "name": "font Field",
+        "show_on_map": false
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [109.39, 19.69]
+    }
+}]

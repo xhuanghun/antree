@@ -1,0 +1,17 @@
+.ui-header{background: url("../images/header.gif") repeat-x center;font-family: 'lucida grande',tahoma,arial,sans-serif;color: white;}  
+.ui-header h1 {background: url("../images/logo/logo.png") no-repeat left;font-size: 22px;color: white;font-weight: normal;padding: 15px 10px;float: left;font-weight: bold;margin-left: 5px; text-indent: 400px}
+
+.ui-login{float: right;padding: 10px}
+.ui-login a{color:#D7E8F7}
+.ui-login .ui-login-bar{text-align: right;}
+
+.menu-item{display:block;color:black;text-decoration: none;	border-bottom :1px dotted #D8D8D8;padding:5px 5px 5px 15px;}
+.menu-item:hover{background: #E0ECFF;}
+
+.ui-index {background: url(../images/web/index.png) repeat-x 50% top;width:100%;height:100%;border:1px solid #C6E2FF;}
+
+.ui-index-top {background: url(../images/web/index-top.png) no-repeat;}
+
+.ui-index-right {background: url(../images/web/index-right.png) no-repeat bottom;}
+
+.ui-index-center {background: url(../images/web/index-center.png) no-repeat bottom;text-align:center;}

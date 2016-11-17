@@ -1,0 +1,82 @@
+
+.entertable{
+	width:100%;height:100%
+}
+
+.entertr{
+	width:100%;height:100%;border:none
+}
+
+.entertd{
+	text-align:center;border-right: 1px solid #A4BED4;border-bottom: 1px solid #A4BED4;border-left:none;border-top:none
+}
+
+#roadDetailTable {
+	BACKGROUND: #DCDCDC
+}
+#roadDetailTable TH {
+	BACKGROUND: #3e95cf; COLOR: #ffffff
+}
+#roadDetailTable TR {
+	LINE-HEIGHT: 18px; BACKGROUND: #ffffff; HEIGHT: 30px
+}
+#roadDetailTable TD {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; PADDING-TOP: 6px
+}
+
+.personalTable {
+	BACKGROUND: #3e95cf
+}
+.personalTable TH {
+	BACKGROUND: #3e95cf; COLOR: #ffffff
+}
+.personalTable TR {
+	LINE-HEIGHT: 18px; BACKGROUND: #ffffff; HEIGHT: 30px
+}
+.personalTable TD {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; PADDING-TOP: 6px
+}
+
+.fontBold {
+	BACKGROUND: #F6F6F6; COLOR: #000000; FONT-WEIGHT: nornal
+}
+
+#conditionDetailTable {
+	BACKGROUND: #3e95cf
+}
+#conditionDetailTable TH {
+	BACKGROUND: #3e95cf; COLOR: #ffffff
+}
+#conditionDetailTable TR {
+	LINE-HEIGHT: 18px; BACKGROUND: #ffffff; HEIGHT: 30px
+}
+#conditionDetailTable TD {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; PADDING-TOP: 6px
+}
+
+
+.borderTable {
+	BACKGROUND: #3e95cf
+}
+.borderTable TH {
+	BACKGROUND: #3e95cf; COLOR: #ffffff
+}
+.borderTable TR {
+	LINE-HEIGHT: 18px; BACKGROUND: #ffffff; HEIGHT: 30px
+}
+.barderTable TD {
+	padding:0px;margin:0;
+}
+
+.DetailTable {
+	BACKGROUND: #3e95cf
+}
+.DetailTable TH {
+	BACKGROUND: #3e95cf; COLOR: #ffffff
+}
+.DetailTable TR {
+	LINE-HEIGHT: 18px; BACKGROUND: #ffffff; HEIGHT: 30px
+}
+.DetailTable TD {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; PADDING-TOP: 6px
+}

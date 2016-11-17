@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.antree.mapper.SysLogMapper" >
+
+<!-- Result Map-->
+<resultMap id="BaseResultMap" type="com.antree.bean.SysLog" >
+	<result column="id" property="id"/>
+	<result column='login' property="login"/>
+	<result column="name" property="name"/>
+	<result column="model" property="model"/>
+	<result column="count" property="count"/>
+	<result column="ptype" property="ptype"/>
+	<result column="ipAddrs" property="ipAddrs"/>
+	<result column="content" property="content"/>
+	<result column="createTime" property="createTime"/>
+	<result column="descr" property="descr"/>
+</resultMap>
+       
+<!-- sys_log table all fields -->
+<sql id="Base_Column_List" >
+	 id,login,name,ipAddrs,model,content,createTime,count,ptype,descr
+</sql>
+   
+   
+<!-- 查询条件 -->
+<sql id="Example_Where_Clause">
+where ptype=1
+<trim  suffixOverrides="," >
+	<if test="id != null" >
+	    and id =  #{id}
+	</if>
+	 	<if test="login != null and login != ''" >
+	     and  login=#{login}
+	</if>
+	<if test="name != null and name != ''" >
+	    and  name=#{name}
+	</if>
+	<if test="ipAddrs != null and ipAddrs != ''" >
+	    and ipAddrs=#{ipAddrs}
+	</if>
+	<if test="createTime != null" >
+	    and createTime =  #{createTime}
+	</if>
+	<if test="descr != null" >
+	    and descr =  #{descr}
+	</if>
+</trim>
+</sql>
+   
+
+
+<insert id="add" parameterType="Object" >
+  <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+	SELECT LAST_INSERT_ID()
+  </selectKey>
+    insert into sys_log(login,name,ipAddrs,model,content,createTime,count,ptype,descr)
+    values(#{login},#{name},#{ipAddrs},#{model},#{content},now(),#{count},#{ptype},#{descr}) <!-- 在MySQL 下now() 与 SQL Server 下的getdate() -->
+</insert>
+
+<!-- 根据id，修改记录-->  
+ <update id="update" parameterType="Object" >
+    update sys_user set login=#{login},name=#{name},ipAddrs=#{ipAddrs},model=#{model},content=#{content},createTime=now(),count=#{count},ptype=#{ptype},descr=#{descr} where id=#{id}
+ </update>
+ 
+ <!-- 修改记录，只修改只不为空的字段 -->
+<update id="updateBySelective" parameterType="Object" >
+	update sys_log set 
+	<trim  suffixOverrides="," >
+	<if test="login != null  and login != '' ">
+		login=#{login},
+	</if>
+	<if test="name != null  and name != '' ">
+		name=#{name},
+	</if>
+	<if test="ipAddrs != null  and ipAddrs != '' ">
+		ipAddrs=#{ipAddrs},
+	</if>
+	<if test="content != null  and content != '' ">
+		content=#{content},
+	</if>
+	<if test="createTime != null  ">
+		createTime=#{createTime},
+	</if>	
+	<if test="descr != null  and descr != '' ">
+		descr=#{descr},
+	</if>
+	</trim> where id=#{id}
+</update>
+
+<!-- 删除记录 -->
+<delete id="delete" parameterType="Object">
+	delete 	from sys_log where id = #{id}
+</delete>
+ 
+<!-- 根据id查询 系统用户 -->
+<select id="queryById"  resultMap="BaseResultMap" parameterType="Object">
+	select <include refid="Base_Column_List" /> 
+	 from sys_log where id = #{id}
+</select>
+
+<!-- 系统用户 列表总数-->
+<select id="queryByCount" resultType="java.lang.Integer"  parameterType="Object">
+	select count(1) from sys_log 
+	<include refid="Example_Where_Clause"/>
+</select>
+  	
+<!-- 查询系统用户列表 -->
+<select id="queryByList" resultMap="BaseResultMap"  parameterType="Object">
+	select 
+	<if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition != ''">
+	   top ${pager.pageSize} 
+	</if>
+	<include refid="Base_Column_List"/>
+	from sys_log 
+	<include refid="Example_Where_Clause"/>
+	<if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition != ''">
+	   and id not in (select top ${pager.pageOffset} id from sys_log <include refid="Example_Where_Clause"/>  order by createTime desc) order by createTime desc
+	</if>
+<!-- 	<if test="pager.orderCondition != null and pager.orderCondition != ''" >
+      ${pager.orderCondition}
+    </if>
+    <if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition != ''" >
+       ${pager.mysqlQueryCondition}
+    </if> -->
+</select>
+  	
+</mapper>   

@@ -1,0 +1,284 @@
+2016-10-22 10:12:32,552 DEBUG [org.apache.ibatis.logging.LogFactory] - <Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.>
+2016-10-22 10:12:33,085 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - <Parsed configuration file: 'class path resource [mybatis-config.xml]'>
+2016-10-22 10:12:33,255 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - <Property 'mapperLocations' was not specified or no matching resources found>
+2016-10-22 10:12:33,372 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\AnTreeMapper.class]>
+2016-10-22 10:12:33,374 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\BaseMapper.class]>
+2016-10-22 10:12:33,375 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\SysLogMapper.class]>
+2016-10-22 10:12:33,375 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\SysMenuBtnMapper.class]>
+2016-10-22 10:12:33,375 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\SysMenuMapper.class]>
+2016-10-22 10:12:33,376 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\SysRoleMapper.class]>
+2016-10-22 10:12:33,376 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\SysRoleRelMapper.class]>
+2016-10-22 10:12:33,377 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Identified candidate component class: file [D:\Workspaces\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\antree\WEB-INF\classes\com\antree\mapper\SysUserMapper.class]>
+2016-10-22 10:12:33,378 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'anTreeMapper' and 'com.antree.mapper.AnTreeMapper' mapperInterface>
+2016-10-22 10:12:33,382 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'baseMapper' and 'com.antree.mapper.BaseMapper' mapperInterface>
+2016-10-22 10:12:33,382 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'sysLogMapper' and 'com.antree.mapper.SysLogMapper' mapperInterface>
+2016-10-22 10:12:33,382 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'sysMenuBtnMapper' and 'com.antree.mapper.SysMenuBtnMapper' mapperInterface>
+2016-10-22 10:12:33,382 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'sysMenuMapper' and 'com.antree.mapper.SysMenuMapper' mapperInterface>
+2016-10-22 10:12:33,383 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'sysRoleMapper' and 'com.antree.mapper.SysRoleMapper' mapperInterface>
+2016-10-22 10:12:33,383 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'sysRoleRelMapper' and 'com.antree.mapper.SysRoleRelMapper' mapperInterface>
+2016-10-22 10:12:33,383 DEBUG [org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner] - <Creating MapperFactoryBean with name 'sysUserMapper' and 'com.antree.mapper.SysUserMapper' mapperInterface>
+2016-10-22 10:13:40,120 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:13:40,125 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a6788c4]>
+2016-10-22 10:13:40,232 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@7e086558] will be managed by Spring>
+2016-10-22 10:13:40,234 DEBUG [com.antree.mapper.SysUserMapper.queryLogin] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7e086558]>
+2016-10-22 10:13:40,239 DEBUG [com.antree.mapper.SysUserMapper.queryLogin] - <==>  Preparing: select id,login,email,pwd,nickName,state,loginCount,loginTime,deleted,createTime,updateTime,createBy,updateBy,superAdmin from sys_user where login=? and pwd=? >
+2016-10-22 10:13:40,264 DEBUG [com.antree.mapper.SysUserMapper.queryLogin] - <==> Parameters: admin@qq.com(String), C33367701511B4F6020EC61DED352059(String)>
+2016-10-22 10:13:40,294 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a6788c4]>
+2016-10-22 10:13:40,295 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a6788c4]>
+2016-10-22 10:13:40,295 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a6788c4]>
+2016-10-22 10:13:40,363 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:13:40,363 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@230a4761]>
+2016-10-22 10:13:40,364 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@108b1a8f] will be managed by Spring>
+2016-10-22 10:13:40,364 DEBUG [com.antree.mapper.SysUserMapper.update] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@108b1a8f]>
+2016-10-22 10:13:40,364 DEBUG [com.antree.mapper.SysUserMapper.update] - <==>  Preparing: update sys_user set login=?,email=?,pwd=?,nickName=?,state=?,loginCount=?,loginTime=?,deleted=?,updateTime=now(),createBy=?,updateBy=? where id=? >
+2016-10-22 10:13:40,365 DEBUG [com.antree.mapper.SysUserMapper.update] - <==> Parameters: admin@qq.com(String), admin@qq.com(String), C33367701511B4F6020EC61DED352059(String), 超级大Boss(String), 0(Integer), 178(Integer), 2016-10-22 10:13:40.353(Timestamp), 0(Integer), null, null, 1(Integer)>
+2016-10-22 10:13:40,366 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@230a4761]>
+2016-10-22 10:13:40,424 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@230a4761]>
+2016-10-22 10:13:40,424 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@230a4761]>
+2016-10-22 10:13:40,480 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:13:40,481 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3253be7c]>
+2016-10-22 10:13:40,481 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@5c451dba] will be managed by Spring>
+2016-10-22 10:13:40,481 DEBUG [com.antree.mapper.SysLogMapper.add] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5c451dba]>
+2016-10-22 10:13:40,482 DEBUG [com.antree.mapper.SysLogMapper.add] - <==>  Preparing: insert into sys_log(login,name,ipAddrs,model,content,createTime,count,ptype,descr) values(?,?,?,?,?,now(),?,?,?) >
+2016-10-22 10:13:40,482 DEBUG [com.antree.mapper.SysLogMapper.add] - <==> Parameters: admin@qq.com(String), 超级大Boss(String), 127.0.0.1(String), 后台(String), 用户登录(String), 1(Integer), 1(Integer), null>
+2016-10-22 10:13:40,483 DEBUG [com.antree.mapper.SysLogMapper.add!selectKey] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5c451dba]>
+2016-10-22 10:13:40,483 DEBUG [com.antree.mapper.SysLogMapper.add!selectKey] - <==>  Preparing: SELECT LAST_INSERT_ID() >
+2016-10-22 10:13:40,483 DEBUG [com.antree.mapper.SysLogMapper.add!selectKey] - <==> Parameters: >
+2016-10-22 10:13:40,484 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3253be7c]>
+2016-10-22 10:13:40,513 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3253be7c]>
+2016-10-22 10:13:40,513 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3253be7c]>
+2016-10-22 10:13:40,514 DEBUG [com.antree.action.MainAction] - <用户登录日志:[admin@qq.com]登录成功>
+2016-10-22 10:13:40,587 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:13:40,587 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f51c9a0]>
+2016-10-22 10:13:40,634 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@4272111] will be managed by Spring>
+2016-10-22 10:13:40,634 DEBUG [com.antree.mapper.SysMenuMapper.getRootMenu] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4272111]>
+2016-10-22 10:13:40,634 DEBUG [com.antree.mapper.SysMenuMapper.getRootMenu] - <==>  Preparing: select id,name,url,parentId,actions from sys_menu where deleted= 0 and parentId is null >
+2016-10-22 10:13:40,634 DEBUG [com.antree.mapper.SysMenuMapper.getRootMenu] - <==> Parameters: >
+2016-10-22 10:13:40,636 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f51c9a0]>
+2016-10-22 10:13:40,637 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f51c9a0]>
+2016-10-22 10:13:40,637 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f51c9a0]>
+2016-10-22 10:13:40,645 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:13:40,645 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6144f47b]>
+2016-10-22 10:13:40,646 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@4ceb706d] will be managed by Spring>
+2016-10-22 10:13:40,646 DEBUG [com.antree.mapper.SysMenuMapper.getChildMenu] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4ceb706d]>
+2016-10-22 10:13:40,646 DEBUG [com.antree.mapper.SysMenuMapper.getChildMenu] - <==>  Preparing: select id,name,url,parentId,actions from sys_menu where deleted= 0 and parentId is not null >
+2016-10-22 10:13:40,646 DEBUG [com.antree.mapper.SysMenuMapper.getChildMenu] - <==> Parameters: >
+2016-10-22 10:13:40,649 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6144f47b]>
+2016-10-22 10:13:40,650 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6144f47b]>
+2016-10-22 10:13:40,650 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6144f47b]>
+2016-10-22 10:23:07,389 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:07,390 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6244ec30]>
+2016-10-22 10:23:07,394 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@559dbc5c] will be managed by Spring>
+2016-10-22 10:23:07,395 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@559dbc5c]>
+2016-10-22 10:23:07,395 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId is null >
+2016-10-22 10:23:07,395 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: >
+2016-10-22 10:23:07,396 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6244ec30]>
+2016-10-22 10:23:07,396 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6244ec30] from current transaction>
+2016-10-22 10:23:07,406 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@559dbc5c]>
+2016-10-22 10:23:07,406 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId is null limit 0,10 >
+2016-10-22 10:23:07,407 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: >
+2016-10-22 10:23:07,410 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6244ec30]>
+2016-10-22 10:23:07,411 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6244ec30]>
+2016-10-22 10:23:07,411 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6244ec30]>
+2016-10-22 10:23:07,662 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:07,662 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c21a44e]>
+2016-10-22 10:23:07,663 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@69e76a88] will be managed by Spring>
+2016-10-22 10:23:07,663 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@69e76a88]>
+2016-10-22 10:23:07,663 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId is null >
+2016-10-22 10:23:07,663 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: >
+2016-10-22 10:23:07,664 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c21a44e]>
+2016-10-22 10:23:07,665 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c21a44e] from current transaction>
+2016-10-22 10:23:07,665 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@69e76a88]>
+2016-10-22 10:23:07,666 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId is null limit 0,10 >
+2016-10-22 10:23:07,666 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: >
+2016-10-22 10:23:07,669 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c21a44e]>
+2016-10-22 10:23:07,670 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c21a44e]>
+2016-10-22 10:23:07,670 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c21a44e]>
+2016-10-22 10:23:07,725 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:07,725 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d6a9a4]>
+2016-10-22 10:23:07,725 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@403fc9b6] will be managed by Spring>
+2016-10-22 10:23:07,726 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@403fc9b6]>
+2016-10-22 10:23:07,726 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId is null >
+2016-10-22 10:23:07,726 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: >
+2016-10-22 10:23:07,727 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d6a9a4]>
+2016-10-22 10:23:07,728 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d6a9a4] from current transaction>
+2016-10-22 10:23:07,728 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@403fc9b6]>
+2016-10-22 10:23:07,728 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId is null limit 0,10 >
+2016-10-22 10:23:07,729 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: >
+2016-10-22 10:23:07,735 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d6a9a4]>
+2016-10-22 10:23:07,735 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d6a9a4]>
+2016-10-22 10:23:07,735 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d6a9a4]>
+2016-10-22 10:23:09,252 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:09,253 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c002abb]>
+2016-10-22 10:23:09,253 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@51d77a8e] will be managed by Spring>
+2016-10-22 10:23:09,253 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@51d77a8e]>
+2016-10-22 10:23:09,253 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId = ? >
+2016-10-22 10:23:09,254 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: 1(Integer)>
+2016-10-22 10:23:09,255 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c002abb]>
+2016-10-22 10:23:09,255 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c002abb] from current transaction>
+2016-10-22 10:23:09,255 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@51d77a8e]>
+2016-10-22 10:23:09,256 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId = ? limit 0,10 >
+2016-10-22 10:23:09,256 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: 1(Integer)>
+2016-10-22 10:23:09,258 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c002abb]>
+2016-10-22 10:23:09,260 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c002abb]>
+2016-10-22 10:23:09,260 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c002abb]>
+2016-10-22 10:23:16,469 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:16,470 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0197]>
+2016-10-22 10:23:16,471 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@77277ffa] will be managed by Spring>
+2016-10-22 10:23:16,471 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@77277ffa]>
+2016-10-22 10:23:16,471 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions from sys_menu where id = ? >
+2016-10-22 10:23:16,473 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <==> Parameters: 8(Integer)>
+2016-10-22 10:23:16,474 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0197]>
+2016-10-22 10:23:16,474 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0197]>
+2016-10-22 10:23:16,474 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0197]>
+2016-10-22 10:23:16,500 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:16,500 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@556eeaaa]>
+2016-10-22 10:23:16,500 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@63ee4826] will be managed by Spring>
+2016-10-22 10:23:16,500 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@63ee4826]>
+2016-10-22 10:23:16,501 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <==>  Preparing: select id,menuid,btnName,btnType,actionUrls from sys_menu_btn where menuid = ? >
+2016-10-22 10:23:16,501 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <==> Parameters: 8(Integer)>
+2016-10-22 10:23:16,503 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@556eeaaa]>
+2016-10-22 10:23:16,503 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@556eeaaa]>
+2016-10-22 10:23:16,503 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@556eeaaa]>
+2016-10-22 10:23:26,058 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:26,058 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b6507e]>
+2016-10-22 10:23:26,059 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@4491a4f] will be managed by Spring>
+2016-10-22 10:23:26,059 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4491a4f]>
+2016-10-22 10:23:26,059 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions from sys_menu where id = ? >
+2016-10-22 10:23:26,059 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <==> Parameters: 7(Integer)>
+2016-10-22 10:23:26,061 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b6507e]>
+2016-10-22 10:23:26,062 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b6507e]>
+2016-10-22 10:23:26,062 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b6507e]>
+2016-10-22 10:23:26,071 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:26,072 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76555538]>
+2016-10-22 10:23:26,072 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@804a187] will be managed by Spring>
+2016-10-22 10:23:26,072 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@804a187]>
+2016-10-22 10:23:26,072 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <==>  Preparing: select id,menuid,btnName,btnType,actionUrls from sys_menu_btn where menuid = ? >
+2016-10-22 10:23:26,072 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <==> Parameters: 7(Integer)>
+2016-10-22 10:23:26,074 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76555538]>
+2016-10-22 10:23:26,075 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76555538]>
+2016-10-22 10:23:26,075 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76555538]>
+2016-10-22 10:23:41,682 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:41,682 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4019eb89]>
+2016-10-22 10:23:41,682 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@34b84c44] will be managed by Spring>
+2016-10-22 10:23:41,682 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@34b84c44]>
+2016-10-22 10:23:41,682 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions from sys_menu where id = ? >
+2016-10-22 10:23:41,683 DEBUG [com.antree.mapper.SysMenuMapper.queryById] - <==> Parameters: 6(Integer)>
+2016-10-22 10:23:41,684 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4019eb89]>
+2016-10-22 10:23:41,685 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4019eb89]>
+2016-10-22 10:23:41,685 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4019eb89]>
+2016-10-22 10:23:41,693 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:41,693 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d3ab8b]>
+2016-10-22 10:23:41,693 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@1adaf109] will be managed by Spring>
+2016-10-22 10:23:41,694 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1adaf109]>
+2016-10-22 10:23:41,694 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <==>  Preparing: select id,menuid,btnName,btnType,actionUrls from sys_menu_btn where menuid = ? >
+2016-10-22 10:23:41,694 DEBUG [com.antree.mapper.SysMenuBtnMapper.queryByMenuid] - <==> Parameters: 6(Integer)>
+2016-10-22 10:23:41,695 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d3ab8b]>
+2016-10-22 10:23:41,696 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d3ab8b]>
+2016-10-22 10:23:41,696 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d3ab8b]>
+2016-10-22 10:23:49,340 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:49,340 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a8393ef]>
+2016-10-22 10:23:49,341 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@6decb6a] will be managed by Spring>
+2016-10-22 10:23:49,341 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6decb6a]>
+2016-10-22 10:23:49,341 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId is null >
+2016-10-22 10:23:49,341 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: >
+2016-10-22 10:23:49,342 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a8393ef]>
+2016-10-22 10:23:49,342 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a8393ef] from current transaction>
+2016-10-22 10:23:49,342 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6decb6a]>
+2016-10-22 10:23:49,342 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId is null limit 0,10 >
+2016-10-22 10:23:49,343 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: >
+2016-10-22 10:23:49,345 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a8393ef]>
+2016-10-22 10:23:49,345 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a8393ef]>
+2016-10-22 10:23:49,345 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a8393ef]>
+2016-10-22 10:23:50,538 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:23:50,538 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df2868]>
+2016-10-22 10:23:50,539 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@6cd0a64a] will be managed by Spring>
+2016-10-22 10:23:50,539 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6cd0a64a]>
+2016-10-22 10:23:50,539 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId = ? >
+2016-10-22 10:23:50,539 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: 9(Integer)>
+2016-10-22 10:23:50,540 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df2868]>
+2016-10-22 10:23:50,540 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df2868] from current transaction>
+2016-10-22 10:23:50,541 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6cd0a64a]>
+2016-10-22 10:23:50,541 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId = ? limit 0,10 >
+2016-10-22 10:23:50,542 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: 9(Integer)>
+2016-10-22 10:23:50,542 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df2868]>
+2016-10-22 10:23:50,543 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df2868]>
+2016-10-22 10:23:50,543 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df2868]>
+2016-10-22 10:24:24,758 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:24:24,758 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,759 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@65c24701] will be managed by Spring>
+2016-10-22 10:24:24,759 DEBUG [com.antree.mapper.SysMenuMapper.add] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,759 DEBUG [com.antree.mapper.SysMenuMapper.add] - <==>  Preparing: insert into sys_menu(name,url,parentId,deleted,createTime,rank,actions) values(?,?,?,?,now(),?,?) >
+2016-10-22 10:24:24,759 DEBUG [com.antree.mapper.SysMenuMapper.add] - <==> Parameters: 基础信息(String), /anTree/list.shtml(String), 9(Integer), 0(Integer), 0(Integer), dataList.do(String)>
+2016-10-22 10:24:24,760 DEBUG [com.antree.mapper.SysMenuMapper.add!selectKey] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,760 DEBUG [com.antree.mapper.SysMenuMapper.add!selectKey] - <==>  Preparing: SELECT LAST_INSERT_ID() >
+2016-10-22 10:24:24,761 DEBUG [com.antree.mapper.SysMenuMapper.add!selectKey] - <==> Parameters: >
+2016-10-22 10:24:24,761 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,761 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9] from current transaction>
+2016-10-22 10:24:24,762 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,762 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <==>  Preparing: insert into sys_menu_btn(menuid,btnName,btnType,actionUrls) values(?,?,?,?) >
+2016-10-22 10:24:24,763 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <==> Parameters: 10(Integer), 添加(String), add(String), save.do(String)>
+2016-10-22 10:24:24,763 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,763 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <==>  Preparing: SELECT @@IDENTITY >
+2016-10-22 10:24:24,763 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <==> Parameters: >
+2016-10-22 10:24:24,796 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,796 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9] from current transaction>
+2016-10-22 10:24:24,796 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,796 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <==>  Preparing: insert into sys_menu_btn(menuid,btnName,btnType,actionUrls) values(?,?,?,?) >
+2016-10-22 10:24:24,797 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <==> Parameters: 10(Integer), 修改(String), edit(String), getId.do|save.do(String)>
+2016-10-22 10:24:24,797 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,797 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <==>  Preparing: SELECT @@IDENTITY >
+2016-10-22 10:24:24,798 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <==> Parameters: >
+2016-10-22 10:24:24,798 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,798 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9] from current transaction>
+2016-10-22 10:24:24,799 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,799 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <==>  Preparing: insert into sys_menu_btn(menuid,btnName,btnType,actionUrls) values(?,?,?,?) >
+2016-10-22 10:24:24,799 DEBUG [com.antree.mapper.SysMenuBtnMapper.add] - <==> Parameters: 10(Integer), 删除(String), remove(String), delete.do(String)>
+2016-10-22 10:24:24,799 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65c24701]>
+2016-10-22 10:24:24,800 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <==>  Preparing: SELECT @@IDENTITY >
+2016-10-22 10:24:24,800 DEBUG [com.antree.mapper.SysMenuBtnMapper.add!selectKey] - <==> Parameters: >
+2016-10-22 10:24:24,800 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,839 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,839 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@427db0b9]>
+2016-10-22 10:24:24,883 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:24:24,883 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad6be89]>
+2016-10-22 10:24:24,883 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@7bb28246] will be managed by Spring>
+2016-10-22 10:24:24,883 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7bb28246]>
+2016-10-22 10:24:24,884 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId = ? >
+2016-10-22 10:24:24,884 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: 9(Integer)>
+2016-10-22 10:24:24,885 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad6be89]>
+2016-10-22 10:24:24,885 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad6be89] from current transaction>
+2016-10-22 10:24:24,885 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7bb28246]>
+2016-10-22 10:24:24,886 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId = ? limit 0,10 >
+2016-10-22 10:24:24,886 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: 9(Integer)>
+2016-10-22 10:24:24,887 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad6be89]>
+2016-10-22 10:24:24,887 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad6be89]>
+2016-10-22 10:24:24,888 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad6be89]>
+2016-10-22 10:24:28,381 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:24:28,381 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18107c2f]>
+2016-10-22 10:24:28,382 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@261be469] will be managed by Spring>
+2016-10-22 10:24:28,382 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@261be469]>
+2016-10-22 10:24:28,382 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId is null >
+2016-10-22 10:24:28,382 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: >
+2016-10-22 10:24:28,384 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18107c2f]>
+2016-10-22 10:24:28,384 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18107c2f] from current transaction>
+2016-10-22 10:24:28,387 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@261be469]>
+2016-10-22 10:24:28,388 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId is null limit 0,10 >
+2016-10-22 10:24:28,388 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: >
+2016-10-22 10:24:28,393 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18107c2f]>
+2016-10-22 10:24:28,393 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18107c2f]>
+2016-10-22 10:24:28,394 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18107c2f]>
+2016-10-22 10:24:29,639 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Creating a new SqlSession>
+2016-10-22 10:24:29,639 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10506147]>
+2016-10-22 10:24:29,640 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - <JDBC Connection [com.mysql.jdbc.JDBC4Connection@553503e5] will be managed by Spring>
+2016-10-22 10:24:29,640 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@553503e5]>
+2016-10-22 10:24:29,640 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==>  Preparing: select count(1) from sys_menu where 1=1 and deleted = 0 and parentId = ? >
+2016-10-22 10:24:29,640 DEBUG [com.antree.mapper.SysMenuMapper.queryByCount] - <==> Parameters: 3(Integer)>
+2016-10-22 10:24:29,641 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10506147]>
+2016-10-22 10:24:29,643 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10506147] from current transaction>
+2016-10-22 10:24:29,643 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <ooo Using Connection [com.mysql.jdbc.JDBC4Connection@553503e5]>
+2016-10-22 10:24:29,643 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==>  Preparing: select id,name,url,parentId,deleted,createTime,updateTime,rank,actions ,(SELECT COUNT(*) FROM sys_menu c WHERE c.parentId = m.id) AS subCount from sys_menu m where 1=1 and deleted = 0 and parentId = ? limit 0,10 >
+2016-10-22 10:24:29,643 DEBUG [com.antree.mapper.SysMenuMapper.queryByList] - <==> Parameters: 3(Integer)>
+2016-10-22 10:24:29,681 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10506147]>
+2016-10-22 10:24:29,681 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10506147]>
+2016-10-22 10:24:29,681 DEBUG [org.mybatis.spring.SqlSessionUtils] - <Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10506147]>

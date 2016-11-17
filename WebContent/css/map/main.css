@@ -1,0 +1,62 @@
+body {
+	padding: 0;
+	margin: 0;
+	color:#285585;
+}
+
+html,
+body,
+#map {
+	height: 100%;
+	font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.header{
+	background-color:#6FA640;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	line-height: 70px;
+	/*line-height: 50px;*/
+}
+.lorem {
+	font-style: italic;
+	color: #AAA;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+	background-color: transparent;
+	border-color: grey;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+}
+
+.redlegend{
+	width: 15px;
+	height: 15px;
+	background:purple;
+}
+
+.bluelegend{
+	width: 15px;
+	height: 15px;
+	background: blue;
+}
+

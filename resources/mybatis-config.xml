@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration> 
+ <mappers>
+   <mapper resource="com/antree/mybatis/SysUserMapper.xml"/>  
+   <mapper resource="com/antree/mybatis/SysLogMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/SysMenuMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/SysMenuBtnMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/SysUserMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/SysRoleMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/SysRoleRelMapper.xml"/>   
+   <mapper resource="com/antree/mybatis/AnTreeMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/AtDictionaryMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/QRCodeMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/CommentMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/PatrolMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/DiagnoseMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/ExceptionMapper.xml"/>
+   <mapper resource="com/antree/mybatis/PictureInfoMapper.xml"/>  
+ </mappers>
+</configuration>

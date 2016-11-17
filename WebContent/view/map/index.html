@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>水利项目一张图浏览系统</title>		
+		<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="css/leaflet-sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/coordinate.bar.css" />
+		<link rel="stylesheet" type="text/css" href="css/Control.FullScreen.css" />	
+		<link rel="stylesheet" type="text/css" href="css/L.Control.ZoomMin.css" />
+		<link rel="stylesheet" type="text/css" href="css/leaflet.label.css" />	
+		<link rel="stylesheet" type="text/css" href="css/leaflet-search.css" />	
+
+		<script src="js/jquery.1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugins/layout/jquery.layout-latest.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugins/layout/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="map-application">
+			<div id="map" class="map"></div>
+			<div id="visButtons"><button class='mapControl btnactive' id='twoControl' type='button' onclick='changeView("twoControl")'>矢量图层</button><button class='mapControl' id='threeControl' type='button' onclick='changeView("threeControl")'>影像图层</button></div>
+		</div>
+		
+		<script src="js/leaflet-src.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugins/leaflet.label.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugins/leaflet-tilelayer-wmts-src.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/leaflet-search.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugins/L.Control.ZoomMin.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/plugins/Control.FullScreen.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/loadGeoJson.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/plugins/TianDiTuLayer.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/loadMap.js" type="text/javascript" charset="utf-8"></script>
+	    
+	</body>
+</html>
