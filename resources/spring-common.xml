@@ -14,9 +14,9 @@
 	<context:component-scan base-package="com.antree.service" />
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">	
          <property name="driverClassName"><value>com.mysql.jdbc.Driver</value></property> 
-         <property name="url"><value>jdbc:mysql://127.0.0.1:3306/antree?useUnicode=true&amp;charaterEncoding=utf-8</value></property> 
-         <property name="username"><value>root</value></property> 
-         <property name="password"><value>123456</value></property>    
+         <property name="url"><value>jdbc:mysql://xhuanghun.gotoftp.com:3306/xhuanghun?useUnicode=true&amp;charaterEncoding=utf-8</value></property> 
+         <property name="username"><value>xhuanghun</value></property> 
+         <property name="password"><value>67651531</value></property>    
 	</bean>
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />

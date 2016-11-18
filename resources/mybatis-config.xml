@@ -16,6 +16,7 @@
    <mapper resource="com/antree/mybatis/PatrolMapper.xml"/> 
    <mapper resource="com/antree/mybatis/DiagnoseMapper.xml"/> 
    <mapper resource="com/antree/mybatis/ExceptionMapper.xml"/>
-   <mapper resource="com/antree/mybatis/PictureInfoMapper.xml"/>  
+   <mapper resource="com/antree/mybatis/PictureInfoMapper.xml"/> 
+   <mapper resource="com/antree/mybatis/ComplaintMapper.xml"/>  
  </mappers>
 </configuration>
